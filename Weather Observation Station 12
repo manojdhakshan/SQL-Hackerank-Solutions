@@ -1,0 +1,4 @@
+select distinct city from station
+where city NOT RLIKE "^[aeiouAEIOU]" 
+and city NOT RLIKE "[aeiouAEIOU]$"
+order by city asc;
